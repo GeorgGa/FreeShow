@@ -129,8 +129,14 @@
             "icon": "build/public"
         },
         "win": {
-            "target": "NSIS",
-            "icon": "build/public/icon.png"
+            "target": [
+                "NSIS",
+                "MSI"
+            ],
+            "icon": "build/public/icon.png"          
+        },
+        "msi": {
+              "perMachine": true
         }
     },
     "devDependencies": {
